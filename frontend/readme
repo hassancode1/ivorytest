@@ -1,0 +1,77 @@
+Table of Contents
+Getting Started
+Prerequisites
+Installation
+Usage
+Features
+Folder Structure
+Technologies Used
+Contributing
+License
+Contact
+Getting Started
+Prerequisites
+Node.js (v14+)
+Yarn (optional, but recommended)
+Installation
+Clone the repository:
+
+bash
+Copy code
+git clone https://github.com/hassancode1/ivorytest/tree/main/frontend
+Navigate to the project directory:
+
+bash
+Copy code
+cd your-frontend-repo
+Install dependencies:
+
+bash
+Copy code
+yarn install
+# or npm install
+Rename .env.example to .env and update the variables according to your setup.
+
+Usage
+To start the development server:
+
+bash
+Copy code
+yarn dev
+# or npm run dev
+Open your browser and go to http://127.0.0.1:5173/login to see the application.
+
+Features
+User Registration and Login
+Wallet Management
+Deposit
+Transfer
+Withdrawal
+Error Handling and User Feedback
+
+Folder Structure
+plaintext
+Copy code
+src/
+  ├── components/
+  ├── hooks/
+  ├── pages/
+  ├── utils/
+  └── App.jsx
+Technologies Used
+React
+Vite
+Tailwind CSS
+Ant Design (optional, if used)
+Axios (for API requests)
+React Router (for routing)
+
+
+
+
+
+
+
+
+
+

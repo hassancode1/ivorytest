@@ -1,0 +1,93 @@
+Ivory test backend
+This is the backend part of the wallet management application built with Node.js/Express and TypeORM. It provides API endpoints to handle user authentication, wallet management, and admin functions.
+
+Table of Contents
+Getting Started
+Prerequisites
+Installation
+PostgreSQL Database Setup
+Configuration
+Usage
+API Endpoints
+Technologies Used
+Contributing
+License
+Contact
+Getting Started
+Prerequisites
+Node.js (v14+)
+PostgreSQL (v12+)
+Installation
+Clone the repository:
+
+bash
+Copy code
+git clone https://github.com/hassancode1/ivorytest/tree/main/ivory
+Navigate to the project directory:
+
+bash
+Copy code
+cd your-backend-repo
+Install dependencies:
+
+bash
+Copy code
+npm install
+Set up your database connection in .env:
+
+plaintext
+Copy code
+
+
+
+
+bash
+Copy code
+npm run migrate
+PostgreSQL Database Setup
+To set up the PostgreSQL database for this application, follow these steps:
+
+Install PostgreSQL: If you haven't already, download and install PostgreSQL on your machine or server.
+
+Access PostgreSQL Shell: Open a terminal or command prompt and access the PostgreSQL shell using the command:
+
+sh
+Copy code
+psql -U postgres
+Replace postgres with your PostgreSQL username if different.
+
+Create a Database: Inside the PostgreSQL shell, create a database for the application:
+
+sql
+Copy code
+CREATE DATABASE ivorytest
+
+Create a User: Create a separate user for the application to access the database:
+
+sql
+Copy code
+CREATE USER user WITH PASSWORD 'your_password';
+
+
+
+
+sql
+Copy code
+GRANT ALL PRIVILEGES ON DATABASE wallet_management TO wallet_user;
+Exit the Shell: Exit the PostgreSQL shell when you're done:
+
+sql
+Copy code
+\q
+Update Environment: Update the .env file in your backend project with the database URL, username, and password.
+
+Configuration
+DATABASE_URL: URL of your PostgreSQL database.
+Usage
+To start the server:
+
+bash
+Copy code
+npm start
+The server will run at http://localhost:3000
+
